@@ -1,0 +1,22 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FDF5E6 0%, #F8E8A3 100%);
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* 星空点缀 */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 80px 80px, 120px 120px;
+  background-position: 0 0, 40px 40px;
+  opacity: 0.08;
+} 
